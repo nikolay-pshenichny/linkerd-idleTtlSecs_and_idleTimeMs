@@ -12,6 +12,7 @@ services:
 
   linkerd-client-side:
     build: ./l5d_wrapper
+    privileged: true
     command: "/opt/config.yaml"
     volumes:
       - ./:/opt

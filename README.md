@@ -1,5 +1,8 @@
 ## idleTtlSecs and idleTimeMs
 
+NOTE: The tests in this folder only create a cluster with **a single server** instance in it. That creates only a single connection through Linkerd.
+
+
 The greeter client/server are based on https://github.com/grpc/grpc-go/tree/master/examples
 
 
@@ -32,3 +35,8 @@ https://linkerd.io/config/head/linkerd/index.html#client-parameters
 This test combines both parameters.
 The entrypoint is `./up.bothParameters.sh`
 The verification steps are exactly the same as described in the previous 2 "tests"
+
+
+
+## References
+- https://github.com/linkerd/linkerd/issues/1890
